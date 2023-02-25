@@ -1,0 +1,45 @@
+.sort{
+    margin-top: 0.5em !important;
+    margin-left: 1em;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+}
+.frame{
+    margin-top: 0.5em !important;
+    margin-left: 1.5em;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+}
+.sub{
+    display: flex;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    /* justify-content: end; */
+    justify-items: flex-end;
+    margin-left: 55em;
+    gap: 1em;
+    margin-top: 2em;
+}
+ .p{
+    margin-left: -40em !important;
+} 
+.togg{
+    width:2em;
+    height: 1em;
+    margin-top: 0.8em;
+    cursor: pointer;
+    
+    
+}
+button{
+    width:150px;
+    height:30px;
+    margin-top: 0.5em !important;
+    color: #0047B3;
+    background-color: #FFFFFF;
+    border: #0047B3 1px solid;
+    border-radius: 5px !important;
+    
+}

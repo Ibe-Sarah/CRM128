@@ -1,7 +1,7 @@
 .sidebar{
     gap: 1em;
     margin-left: 1em;
-    margin-top: -33.5em;
+    margin-top: -35.5em;
     z-index: 1;
     position: fixed;
 }
@@ -12,7 +12,7 @@
 }
 h5 {
     margin-left: 2em;
-    margin-top: -1.5em;
+    margin-top: -1.5em !important;
     font-size: 10px;
     color:  rgb(1, 1, 56);
     
@@ -26,13 +26,35 @@ h5 {
     font-size: 15px;
     color:  rgb(1, 1, 56);
     font-weight: bolder;
+    /* max-height: 200px !important; */
+    /* overflow-y: auto !important; */
     
 }
 h6{
     color:  rgb(1, 1, 56);
     font-weight: bolder !important;
     margin-left: 3.3em;
-    margin-top: -1.2em !important;
+    margin-top: -1.5em !important;
     
 
+}
+.team h6{
+    border-top: 1px solid !important;
+    /* background-color: brown !important; */
+    border-bottom: 1px solid !important;
+    height: 3em;
+}
+.ditem{
+    max-height: 200px; /* adjust the height to your needs */
+  /* overflow-y: scroll !important; */
+  overflow-wrap: normal;
+  color:black !important;
+  height: 130px !important;
+  /* resize: vertical; */
+  overflow-y: auto !important;
+
+  }
+  ::-webkit-scrollbar-track:hover,
+::-webkit-scrollbar-track:active {
+  background-color: #f5f5f5;
 }
