@@ -6,6 +6,9 @@ import Sidebar from './component/sidebar';
 import Grid from './component/grid';
 import New from './component/new';
 import Toggle from './component/toggle';
+import Overlay from './component/overlay'
+import ListComponent from './component/list';
+import Form from './component/newTask';
 
 function App() {
   return( 
@@ -14,6 +17,9 @@ function App() {
   <New/> 
   <Grid/>
   <Sidebar/>
+  {/* <ListComponent/> */}
+  {/* <Form/> */}
+  {/* <Overlay/> */}
   
 </div>
 

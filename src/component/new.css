@@ -1,15 +1,15 @@
 .sort{
-    margin-top: 0.5em !important;
+    margin-top: 0.7em !important;
     margin-left: 1em;
-    width: 1.5em;
-    height: 1.5em;
+    width: 1em;
+    height: 1em;
     cursor: pointer;
 }
 .frame{
-    margin-top: 0.5em !important;
+    margin-top: 0.7em !important;
     margin-left: 1.5em;
-    width: 1.5em;
-    height: 1.5em;
+    width: 1em;
+    height: 1em;
     cursor: pointer;
 }
 .sub{
@@ -28,7 +28,7 @@
         <p className40em !important; */
 /* }  */
 .togg{
-    width:2em;
+    width:1.5em;
     height: 1em;
     margin-top: 0.8em;
     cursor: pointer;
@@ -36,8 +36,8 @@
     
 }
 button{
-    width:150px;
-    height:30px;
+    width:13em;
+    height:2em;
     margin-top: 0.5em !important;
     color: #0047B3;
     background-color: #FFFFFF;

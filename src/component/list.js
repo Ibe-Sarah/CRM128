@@ -1,33 +1,86 @@
 import React from "react";
+import Grid from "./grid";
+import './list.css'
 
-function ListComponent({ projects }) {
+function ListComponent() {
   return (
     <div>
-      <h2>List View</h2>
       <table>
-        <thead>
-          <tr>
-            <th>Project Title</th>
-            <th>Project Lead</th>
-            <th>Start Date</th>
-            <th>Due Date</th>
-            <th>States</th>
-            <th>% Completion</th>
-          </tr>
-        </thead>
-        <tbody>
-          {projects.map((project) => (
-            <tr key={project.id}>
-              <td>{project.title}</td>
-              <td>{project.lead}</td>
-              <td>{project.startDate}</td>
-              <td>{project.dueDate}</td>
-              <td>{project.state}</td>
-              <td>{project.completion}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+  <thead>
+    <tr>
+      <th>Project title</th>
+      <th>Project lead</th>
+      <th>Start Date</th>
+      <th>Due Date</th>
+      <th>States</th>
+      <th>% Completion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ATLANTIC HALL SCHOOL</td>
+      <td>John Doe</td>
+      <td>24 Nov 2022</td>
+      <td>30 Jun 2023</td>
+      <td>In progress</td>
+      <td>78% complete</td>
+    </tr>
+    <tr>
+    <td>ATLANTIC HALL SCHOOL</td>
+      <td>John Doe</td>
+      <td>24 Nov 2022</td>
+      <td>30 Jun 2023</td>
+      <td>In progress</td>
+      <td>78% complete</td>
+      </tr>
+      <tr>
+    <td>ATLANTIC HALL SCHOOL</td>
+      <td>John Doe</td>
+      <td>24 Nov 2022</td>
+      <td>30 Jun 2023</td>
+      <td>In progress</td>
+      <td>78% complete</td>
+      </tr>
+
+      <tr>
+    <td>ATLANTIC HALL SCHOOL</td>
+      <td>John Doe</td>
+      <td>24 Nov 2022</td>
+      <td>30 Jun 2023</td>
+      <td>In progress</td>
+      <td>78% complete</td>
+      </tr>
+
+      <tr>
+    <td>ATLANTIC HALL SCHOOL</td>
+      <td>John Doe</td>
+      <td>24 Nov 2022</td>
+      <td>30 Jun 2023</td>
+      <td>In progress</td>
+      <td>78% complete</td>
+      </tr>
+
+      <tr>
+    <td>ATLANTIC HALL SCHOOL</td>
+      <td>John Doe</td>
+      <td>24 Nov 2022</td>
+      <td>30 Jun 2023</td>
+      <td>In progress</td>
+      <td>78% complete</td>
+      </tr>
+
+      <tr>
+    <td>ATLANTIC HALL SCHOOL</td>
+      <td>John Doe</td>
+      <td>24 Nov 2022</td>
+      <td>30 Jun 2023</td>
+      <td>In progress</td>
+      <td>78% complete</td>
+      </tr>
+
+  </tbody>
+</table>
+
     </div>
   );
 }
