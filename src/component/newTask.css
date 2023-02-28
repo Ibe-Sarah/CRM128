@@ -1,6 +1,5 @@
 form {
-    /* display: flex; */
-    /* flex-direction: column; */
+
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -8,12 +7,16 @@ form {
     max-width: 600px;
     margin: 0 auto;
   }
-  h4{
-    background-color: #7AC769;
+  .Head{
+    background-color: #7AC769  !important;
+    text-align: left;
+    height: 2em;
   }
   
   label {
     margin-bottom: 0.5rem;
+    color: black;
+    font-weight: bold;
   }
   
   input,
@@ -24,7 +27,7 @@ form {
     border-radius: 5px;
     margin-bottom: 1rem;
     font-size: 1rem;
-    color: #555;
+    color:black;
     width: 100%;
   }
   
@@ -41,7 +44,8 @@ form {
   
   button {
     background-color: #7AC769;
-    color: black;
+    color: #091E42;
+    font-weight: bold;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;
@@ -57,10 +61,11 @@ form {
   
   .more-details {
     margin-top: 1rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     cursor: pointer;
-    text-align: center;
+    /* text-align: center; */
     color: #091E42;
+    text-decoration: underline;
   }
   
   .hidden {
@@ -72,10 +77,12 @@ form {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 1em;
-  
+ 
   }
+   
   
-  /* .form-section label {
-    margin-bottom: 0.5rem;
-  } */
-  
+#save{
+  background-color: #7AC769 !important;
+  border: none !important;
+margin-left: 12em !important;
+}

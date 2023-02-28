@@ -10,9 +10,9 @@ const Form = () => {
 
   return (
     <form>
-        <h4>Create New Task x</h4>
+        <h4 className="Head">Create New Task </h4>
       <label htmlFor="title">Title:</label>
-      <input type="text" id="title" name="title" />
+      <input type="text" id="title" name="title" placeholder="Enter title" />
 
     <div className="form-section">
       <label htmlFor="startDate">Start Date:
@@ -49,31 +49,41 @@ const Form = () => {
       </label>
 </div>
 <label htmlFor="description">Description:</label>
-          <textarea id="description" name="description"></textarea>
+          <textarea id="description" name="description" placeholder="Enter Description"></textarea>
 
-      <div onClick={handleMoreDetailsClick} style={{ cursor: "pointer" }}>
-        More Details &#x25BC;
+      <div className= 'more-details'onClick={handleMoreDetailsClick} style={{ cursor: "pointer" }}>
+        More Details
       </div>
 
       {showMoreDetails && (
-        <div>
-                 <label htmlFor="priority">Priority:</label>
-          <select id="priority" name="priority">
-            <option value="high">High</option>
-            <option value="medium">Medium</option>
-            <option value="low">Low</option>
-          </select>
+        <div className="form-section">
+                 <label htmlFor="duration">Duration:
+         <input type='date' id="duration" name="duration"/> </label>
 
-          <label htmlFor="status">Status:</label>
-          <select id="status" name="status">
-            <option value="notStarted">Not Started</option>
-            <option value="inProgress">In Progress</option>
-            <option value="completed">Completed</option>
+                   <label htmlFor="freq">Frequency:
+          <select id="freq" name="freq">
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="yearly">Yearly</option>
           </select>
+          </label>
+          <label htmlFor="attachment">Attachment:
+         <input type='text' id="attachment" name="attachment"/> </label>
+
+         <label htmlFor="priority">Priority:
+          <select id="priority" name="prority">
+            <option value="daily">Small</option>
+            <option selected value="weekly">Medium </option>
+            <option value="monthly">Large</option>
+            
+          </select>
+          </label>
+
         </div>
       )}
 
-      <button type="submit">Save</button>
+      <button id="save" type="submit">Save</button>
     </form>
   );
 };

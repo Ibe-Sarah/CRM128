@@ -5,11 +5,11 @@
     gap: 1em;
     font-size: 1em;
     margin-left: -0.8em;
-    margin-top: 4em;
+    margin-top: 4em !important;
     
 }
 img{
-    margin-top: -6em;
+    margin-top: -9em !important;
 }
 .per{
   display: grid;
@@ -19,7 +19,7 @@ img{
   font-size: 10px;
   margin-left:-0.7em;
   width: 23em;
-  margin-top: -4.5em;
+  margin-top: -6.5em !important;
   font-weight: bolder;
   color: #091E42
   
@@ -36,7 +36,7 @@ img{
 .time{
     font-size: 10px;
     width: 6.5em;
-    margin-top: -4.5em;
+    margin-top: -6.5em !important;
     font-weight: bolder;
     background-color: #E6F0FF;
     height: 2em;

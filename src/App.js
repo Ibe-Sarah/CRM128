@@ -17,9 +17,9 @@ function App() {
   <New/> 
   <Grid/>
   <Sidebar/>
-  {/* <ListComponent/> */}
-  {/* <Form/> */}
-  {/* <Overlay/> */}
+  <ListComponent/> 
+  <Form/> 
+  
   
 </div>
 

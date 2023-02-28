@@ -32,9 +32,11 @@ h4{
     font-size: 1.3em !important;
     text-align: center; 
     margin-top: 2em !important;
+    background-color: white !important;
 }
 #range{
     margin-left: 3em;
+    width: auto !important;
     background-color: green !important;
 }
 .bar{
