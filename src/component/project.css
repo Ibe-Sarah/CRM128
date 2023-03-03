@@ -1,0 +1,24 @@
+.teamzz{
+    display: flex;
+flex-direction: column;
+    gap: 0.5em;
+    margin-left: 60em !important;
+    margin-top: 3em !important;
+}
+.n{
+    display: grid;
+    margin-top: -5.8em;
+    margin-left: 2.5em;
+    gap: 0.1em;
+}
+.p{
+    margin-top: -1em !important;
+    margin-left: 0.1em !important;
+}
+.subpro{
+font-size: 1.1em !important;
+}
+.propro{
+    font-size: 1.3em !important;
+    font-weight: none !important;
+}

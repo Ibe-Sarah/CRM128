@@ -17,6 +17,7 @@
     border-radius: 7px;
     /* text-align: center; */
     height: 13em;
+    cursor: pointer;
     
 }
 p{
@@ -45,4 +46,30 @@ h4{
     font-size: 0.7em;
     color: #091E42;
     font-weight: bold;
+}
+.second{
+    border: 1px #A6AEBB
+    solid;
+    border-radius: 7px;
+    /* text-align: center; */
+    height: 13em;
+    
+}
+
+.third{
+    border: 1px #A6AEBB
+    solid;
+    border-radius: 7px;
+    /* text-align: center; */
+    height: 13em;
+    
+}
+
+.fourth{
+    border: 1px #A6AEBB
+    solid;
+    border-radius: 7px;
+    /* text-align: center; */
+    height: 13em;
+    
 }

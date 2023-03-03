@@ -1,10 +1,15 @@
 import React from "react";
 import Grid from "./grid";
 import './list.css'
-
+import Header from "./header";
+import Sidebar from "./sidebar";
 function ListComponent() {
   return (
+
+
     <div>
+          
+          
       <table>
   <thead>
     <tr>

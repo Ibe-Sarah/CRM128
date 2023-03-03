@@ -1,3 +1,4 @@
+
 form {
 
     background-color: #fff;
@@ -5,7 +6,10 @@ form {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     max-width: 600px;
-    margin: 0 auto;
+    /* margin-left: -60em !important; */
+    
+    
+  
   }
   .Head{
     background-color: #7AC769  !important;
@@ -85,4 +89,5 @@ form {
   background-color: #7AC769 !important;
   border: none !important;
 margin-left: 12em !important;
+margin-top: -1em;
 }

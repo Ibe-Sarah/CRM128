@@ -1,0 +1,42 @@
+.tableOf{
+    margin-left:15em !important;
+    margin-top:-10em !important ;
+    width: 36em !important;
+}
+.members{
+    margin-left: 50em;
+    margin-top: -27em;
+}
+.members h2{
+    margin-left: 7em !important;
+    font-size: 1em !important;
+    margin-top:3em !important;
+    z-index: 1 !important;
+}
+.members h3{
+    background-color: #E6F0FF !important;
+    border: none !important;
+    color: #091E42 !important;
+    width: 5em !important;
+    margin-top: -1em !important;
+    margin-left: 15em !important;
+    font-size: 1em;
+    cursor: pointer;
+}
+.teamz{
+    display: flex;
+flex-direction: column;
+    gap: 0.5em;
+    margin-left: 10em !important;
+    margin-top: 5em !important;
+}
+.n{
+    display: grid;
+    margin-top: -5.8em;
+    margin-left: 2.5em;
+    gap: 0.1em;
+}
+.p{
+    margin-top: -1em !important;
+    margin-left: 0.1em !important;
+}

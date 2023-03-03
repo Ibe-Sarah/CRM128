@@ -96,3 +96,48 @@
   
 }
 
+.frame{
+  margin-top: -10em !important;
+  margin-left: 70em !important;
+  width: 1em;
+  height: 1em;
+  cursor: pointer;
+}
+.togg{
+  width:1.5em;
+  height: 1em;
+  margin-top: 5em !important;
+  cursor: pointer;
+  
+  
+}
+.icons {
+  margin-top: -3em;
+  margin-left: 3em;
+}
+.first{
+  border: 1px #A6AEBB
+  solid;
+  border-radius: 7px;
+  /* text-align: center; */
+  height: 13em;
+  cursor: pointer;
+  
+}
+.main{
+  margin-left: 15em !important;
+  margin-top: 5em !important;
+  width: 65em !important;
+  /* height: 30em !important; */
+  /* border:3px #FFFFFF !important; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2em;
+
+
+}
+/* .rame {
+  margin-top: -10em;
+  margin-left: -10em !important;
+} */

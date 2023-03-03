@@ -39,9 +39,31 @@ button{
     width:13em;
     height:3em !important;
     margin-top: 0.5em !important;
-    color: #0047B3;
-    background-color: white !important;
+    color: white !important;
+    background-color: #0047B3 !important;
     border: #0047B3 1px solid !important;
     border-radius: 5px !important;
+   padding: 8px, 24px, 8px, 24px !important;
+
     
 }
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  .form-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: white; */
+    padding: 15px;
+    z-index: 2;
+    transition: ease-out;
+  }
+    

@@ -10,6 +10,7 @@ const Form = () => {
 
   return (
     <form>
+      
         <h4 className="Head">Create New Task </h4>
       <label htmlFor="title">Title:</label>
       <input type="text" id="title" name="title" placeholder="Enter title" />
@@ -84,6 +85,7 @@ const Form = () => {
       )}
 
       <button id="save" type="submit">Save</button>
+      
     </form>
   );
 };
