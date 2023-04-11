@@ -2,19 +2,44 @@
 form {
 
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    max-width: 600px;
+    padding: 1em 1.5em 1em 1.5em;
+    max-width: 700px;
+    width: 32em;
+    margin-top: 1em;
+    font-family: 'Archivo', sans-serif;
+    height: 51em;
+    color: #091E42;
+    border: 2px solid #0047B3;
     /* margin-left: -60em !important; */
+    overflow-y: auto;
     
     
   
   }
+  form:focus{
+    border: 2px solid #0047B3;
+  }
   .Head{
     background-color: #7AC769  !important;
-    text-align: left;
-    height: 2em;
+    /* text-align: left; */
+    height: 3.1em;
+    margin-left: -1.2em !important;
+    width: 25em !important;
+    margin-top: 2.8em !important;
+  
+    font-family: 'Clash Grotesk', sans-serif;
+  }
+  form h4{
+    margin-top: 1em !important; /* add margin to the top */
+    margin-bottom: 1em !important; /* add margin to the bottom */
+  
+  }
+
+
+  .smallbreak {
+    margin-top: -2em !important; /* adjust this value to control the size of the break */
   }
   
   label {
@@ -27,26 +52,33 @@ form {
   select,
   textarea {
     padding: 0.5rem;
-    border: 1px solid #0047B3;
+    border: 1px solid #0047B3 !important;
     border-radius: 5px;
     margin-bottom: 1rem;
     font-size: 1rem;
     color:black;
     width: 100%;
   }
+  input,
+  select,
+textarea :hover{
+border-color: #0047B3
+
+}
+
   
-  select {
+  /* select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M2.2 6.7l7.2 7.2 7.2-7.2c.4-.4 1-.4 1.4 0s.4 1 0 1.4l-8 8c-.2.2-.5.3-.7.3s-.5-.1-.7-.3l-8-8c-.4-.4-.4-1 0-1.4.4-.5 1-.5 1.4 0z'/%3E%3C/svg%3E") no-repeat right 0.75rem center/1.5rem 1.5rem;
-  }
+  } */
   
   textarea {
     resize: vertical;
   }
   
-  button {
+  /* button {
     background-color: #7AC769;
     color: #091E42;
     font-weight: bold;
@@ -58,7 +90,7 @@ form {
     margin-top: 1rem;
     margin-left: 9em !important;
   }
-  
+   */
   button:hover {
     background-color: #333;
   }
@@ -81,6 +113,7 @@ form {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 1em;
+    padding: 5px;
  
   }
    
@@ -88,6 +121,17 @@ form {
 #save{
   background-color: #7AC769 !important;
   border: none !important;
-margin-left: 12em !important;
-margin-top: -1em;
+  color: #091E42;
+margin-left: 8em!important;
+margin-right: -2em !important;
+margin-top: 1.5em;
+width: 16em !important;
+border-radius: 3px;
+padding: 16px, 24px, 16px, 24px;
+Width: 200px !important;
+Height:40px;
+Top: 787px;
+
+border-radius: 8px;
+
 }

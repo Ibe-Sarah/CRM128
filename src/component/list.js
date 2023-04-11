@@ -9,9 +9,9 @@ function ListComponent() {
 
     <div>
           
-          
+         
       <table>
-  <thead>
+  <thead><p className="going">Ongoing Projects</p> 
     <tr>
       <th>Project title</th>
       <th>Project lead</th>
@@ -56,6 +56,36 @@ function ListComponent() {
       <td>78% complete</td>
       </tr>
 
+     </tbody>
+</table>
+<table>
+  <thead><p className="going">Completed Projects</p> 
+    <tr>
+      <th>Project title</th>
+      <th>Project lead</th>
+      <th>Start Date</th>
+      <th>Due Date</th>
+      <th>States</th>
+      <th>% Completion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ATLANTIC HALL SCHOOL</td>
+      <td>John Doe</td>
+      <td>24 Nov 2022</td>
+      <td>30 Jun 2023</td>
+      <td>In progress</td>
+      <td>78% complete</td>
+    </tr>
+    <tr>
+    <td>ATLANTIC HALL SCHOOL</td>
+      <td>John Doe</td>
+      <td>24 Nov 2022</td>
+      <td>30 Jun 2023</td>
+      <td>In progress</td>
+      <td>78% complete</td>
+      </tr>
       <tr>
     <td>ATLANTIC HALL SCHOOL</td>
       <td>John Doe</td>
@@ -74,17 +104,11 @@ function ListComponent() {
       <td>78% complete</td>
       </tr>
 
-      <tr>
-    <td>ATLANTIC HALL SCHOOL</td>
-      <td>John Doe</td>
-      <td>24 Nov 2022</td>
-      <td>30 Jun 2023</td>
-      <td>In progress</td>
-      <td>78% complete</td>
-      </tr>
-
+    
   </tbody>
 </table>
+
+
 
     </div>
   );

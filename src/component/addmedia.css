@@ -1,0 +1,41 @@
+.addmedia{
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+width:22em;
+}
+.cloud{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #091E42;
+    border: dotted 2px #D0D5DD
+    ;
+    width: 19em;
+    margin-left: 1em;
+}
+.files{
+    color: #091E42 !important;
+
+}
+.cancel{
+    margin-left: 2em;
+    border-radius: 5px;
+    color: #091E42;
+    background-color: #FFFFFF !important;
+    margin-top: 1em;
+}
+.savedocument{
+    color: #C2C7D0;
+    border-radius: 5px;
+    background-color: #DFE2E6;
+    border: none;
+    margin-top: 1em;
+}
+.savedocument:hover{
+    background-color: #DFE2E6 !important;
+    color: #C2C7D0 !important;
+}
+.cancel:hover {
+    color: #091E42 !important;
+    background-color: #FFFFFF !important;
+}

@@ -2,3 +2,44 @@
     margin-left: 5em !important;
     margin-top: 2em !important;
 }
+.Mech{
+    margin-left: 1em;
+    margin-top: -1em;
+}
+.Mech table{
+  width: 62em;
+}
+.mehz{
+font-size: 1.1em;
+margin-left: 1em;
+margin-top: -2.3em !important;
+}
+.mehz-image{
+  margin-left: 32em !important;
+  margin-top: -0.2em !important;
+}
+
+
+.overlayzzz {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  .form-popupzzz {
+    position: fixed;
+    top: 75%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    /* background-color: white; */
+    padding: 15px;
+    z-index: 2;
+    transition: ease-out;
+    /* background-color:rgba(0, 0, 0, 0.5); */
+    /* width: 50em; */
+    /* overflow-y: auto; */
+  }
+  

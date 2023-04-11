@@ -6,6 +6,7 @@ import ListComponent from './list';
 import { useState } from 'react';
 import Grid from './grid';
 import Form from './newTask';
+import NewtaskForm from './NewtaskForm';
 
 function New (props) {
     const [isListVisible, setIsListVisible] = useState(false);
@@ -29,27 +30,18 @@ function New (props) {
     
     return (
         <div className= 'sub'>
-            <button onClick={handleAddProjectClick}>New Project</button>
+            <button style={{marginBottom:'-2.3em'}} className='first-btn'onClick={handleAddProjectClick}>New Project</button>
             {showForm && (
         <div className="overlay" onClick={handleCloseForm}>
           <div className="form-popup" onClick={(e) => e.stopPropagation()}>
             {/* <button onClick={handleCloseForm}>Close</button> */}
-            <Form />
+            <NewtaskForm />
+            {/* NewtaskForm has the cotent of 'Add New Project' while Form has the content of 'Add New Task' */}
           </div>
         </div>
       )}
 
 
-            {/* <img onClick={handleListClick} className= 'sort' src={process.env.PUBLIC_URL + "/images/Vector.jpg"} alt="" ></img> */}
-            <div style={{ display: isListVisible ? "block" : "none" }}>
-            {isListVisible ? <ListComponent /> : <Grid />}
-
-      </div>
-            {/* <img className='frame' src= {process.env.PUBLIC_URL + "/images/Frame.jpg"} alt= 'frame'></img>  */}
-            <FontAwesomeIcon icon="fa-sort" />
-            {/* <button onClick={props.onClick}>
-      {props.descending ? <faSortDown /> : <faSort />}
-    </button> */}
             </div>
     )
 }

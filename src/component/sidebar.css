@@ -5,6 +5,9 @@
     
     position: absolute;
 }
+.img, svg{
+    margin-left: -2.5em;
+}
 .side{
     color:  blue;
     margin-left: -0.3em;
@@ -63,3 +66,10 @@ h6{
 ::-webkit-scrollbar-track:active {
   background-color: #f5f5f5;
 }
+.selected {
+    width: 3em !important;
+}
+    .side-nav{
+        width: 7em !important;
+    background-color: green !important;
+    }

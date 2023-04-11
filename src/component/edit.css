@@ -1,0 +1,57 @@
+.edit{
+    margin-left: 17em;
+    height: 70em;
+    font-family: 'Archivo', sans-serif;
+}
+#task{
+    margin-top: -1em !important;
+    margin-left: 3em !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-items: space-between !important;
+}
+#savez{
+    background-color: #091E42 ;
+    color: white !important;
+    border-radius: 3px;
+    border: none;
+    width:9em;
+    height: 2.5em;
+    margin-left: 9.5em;
+    margin-top: 1em;
+    Padding: 12px, 24px, 12px, 24px;
+    font-family: 'Archivo', sans-serif;
+
+
+
+}
+#savez:hover{
+    background-color: #091E42  !important;
+    color: white !important;
+}
+.overlayy {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    overflow-y: none !important;
+     width: 16em !important;
+  }
+  .form-popupp {
+    position: fixed;
+    top: 75%;
+    left: -260%;
+    transform: translate(-50%, -50%);
+    /* background-color: white; */
+    padding: 15px;
+    z-index: 1;
+    transition: ease-out;
+    /* overflow-y: scroll !important; */
+    /* overflow-x: auto !important; */
+    /* overflow-x: scroll !important; */
+    /* width: 16em !important; */
+    /* margin-top: -2em !important; */
+  }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './component/header';
@@ -15,13 +15,22 @@ import Button from './component/button'
 import Lead from './component/lead';
 import { Container } from 'react-bootstrap';
 import { useRef } from 'react';
-import { BrowserRouter, Routes, Route,Link} from "react-router-dom";
+import { BrowserRouter, Routes, Route,Link, Navigate} from "react-router-dom";
 import Mechanical from './component/mechanical';
 import Option from './component/options';
+import Edit from './component/edit';
+import Notification from './component/notification';
+import Grid1 from './component/grid1';
+import {Client as Styletron} from 'styletron-engine-atomic';
+import {Provider as StyletronProvider} from 'styletron-react';
+import {LightTheme, BaseProvider} from 'baseui';
+import Breadcrumbs from './component/breadcrumb';
+import { IoGrid} from "react-icons/io5";
+import {TfiLayoutListThumbAlt} from 'react-icons/tfi'
+import AddUserDetails from './component/adduserdetails';
+import Addmedia from './component/addmedia';
 
-
-
-
+const engine = new Styletron();
 function App() {
   const [rangeValue, setRangeValue] = useState(50);
   const divRef = useRef(null);
@@ -30,12 +39,17 @@ function App() {
   const [displayGrid, setDisplayGrid] = useState(true);
   const [displayList, setDisplayList] = useState(false);
   const [displayDetails, setDisplayDetails]= useState(false);
-
-  const handleClickGrid = () => {
+const [color, setColor]= useState('#003E9C')
+  const handleClickGrid =color => {
     setDisplayGrid(true);
     setDisplayList(false);
     setDisplayDetails(false);
+    setColor(color)
   };
+  useEffect(()=>{
+<IoGrid style={{color: color
+}}/>
+  },[color])
 
   const handleClickList = () => {
     const div = divRef.current;
@@ -57,61 +71,54 @@ const handleRangeChange = (event) => {
 
   return( 
     
-
-
-
+    
 
 <div>
+  
   <BrowserRouter>
 <Header/>
 
 <New/> 
-<Sidebar/>
-<>
-      <div className="icons">
-        {/* <Grid ref = {divRef} clickDetails={handleClickDetails}/>  */}
-       {/* <div className="first" onClick={handleClickDetails} style ={{display : 'none'}}><p>Start Date: 20 Dec 2022 <Button/></p><h4>EMZOR PHARM INDUSTRY LTD</h4>
-          <span className='bar'>Progress:   {rangeValue}%</span>
-            <input
-        type="range"
-        min="0"
-        id='range'
-        max="100"
-        value={rangeValue}
-        onChange={handleRangeChange}
-      />
+ <Sidebar/>
+
+
+<Breadcrumbs /> 
+
+
+     
+    
+
+
+    <div className="icons">
       
-            <Lead 
-            position="Project Lead"
-            name='Joe Doe'
-            imageSrc={process.env.PUBLIC_URL + "/Rectangle..jpg"}
-            timeLeft="2 weeks left"
-          /></div>  */}
-   {/* <div clickDetails={handleClickDetails} className='first' ></div> */}
-      <img onClick={handleClickGrid} className='frame' src= {process.env.PUBLIC_URL + "/images/Frame.jpg"} alt= 'frame'></img>
-        <img onClick={handleClickList} className= 'sort' src={process.env.PUBLIC_URL + "/images/Vector.jpg"} alt="" ></img>
-      </div>
-      {displayGrid && <Grid />}
+    <Link to="/">
+  <IoGrid style={{ color: '#003E9C' }} className='frame' />
+</Link>
+
+<Link to="/list">
+  <TfiLayoutListThumbAlt style={{ color: '#003E9C' }} className='sort' />
+</Link>
+ </div>
+      {/* {displayGrid && <Grid />}
       {displayList && <ListComponent />}
-      {/* {displayDetails && <Project />} */}
+       {displayDetails && <Project />}  */}
 
-    
-
-
-    </>
-
+       <Routes>
+       <Route path="/" element={<Navigate to="/CRM" />} />
+        <Route path="/CRM" element={<Grid />} />
+        <Route path="/atlantic" element={<Project />} />
+        <Route path="/mechanical" element={<Mechanical />} />
+        <Route path="/list" element={<ListComponent />} />
+  </Routes>  
 
   
-  
-    {/* <Project/> */}
-    {/* <div><Link to='/project'> Project</Link> </div> */}
-    {/* <div><Link to='/'> ject</Link> </div> */}
-    
+    <div>
+        
+      </div>
+
 
 
 </BrowserRouter>
-{/* <Mechanical/> */}
-<Option/>
 </div>
 );
 }

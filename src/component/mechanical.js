@@ -1,17 +1,31 @@
-import React from "react";
+import React, {useState} from "react";
 import Button from "./button";
 import './mechanical.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisV } from '@fortawesome/free-solid-svg-icons';
+import Option from "./options";
+import CreateTask from "./createtask";
+import Edit from "./edit";
+
 function Mechanical() {
+  
+    const [showOptions, setShowOptions] = useState(false);
+
+  const handleOptionsClick = () => {
+    setShowOptions(true);
+  };
+  const handleCloseForm = () => {
+    setShowOptions(false);
+  };
     return (
   
   
-      <div>
-            
+      <div className="Mech">
+       
+            <CreateTask/>
             
         <table>
-    <thead>
+    <thead style={{width:'20em'}}>
       <tr>
         <th>Task</th>
         <th>Assigned To</th>
@@ -29,7 +43,15 @@ function Mechanical() {
         <td>30 Jun 2023</td>
         <td>In progress</td>
         <td >
-        <FontAwesomeIcon icon={faEllipsisV}/>
+        <FontAwesomeIcon style={{marginLeft:'2em'}} icon={faEllipsisV} onClick={handleOptionsClick}/>
+        {showOptions && (
+        <div className="overlayzzz" onClick={handleCloseForm}>
+          <div className="form-popupzzz" onClick={(e) => e.stopPropagation()}>
+            {/* <button onClick={handleCloseForm}>Close</button> */}
+            <Option />
+          </div>
+</div>
+        )}
             </td>
       </tr>
       <tr>
@@ -39,7 +61,7 @@ function Mechanical() {
         <td>30 Jun 2023</td>
         <td>In progress</td>
         <td >
-        <FontAwesomeIcon icon={faEllipsisV}/>
+        <FontAwesomeIcon style={{marginLeft:'2em'}} icon={faEllipsisV}/>
             </td>
 
         </tr>
@@ -50,7 +72,7 @@ function Mechanical() {
         <td>30 Jun 2023</td>
         <td>In progress</td>
         <td >
-        <FontAwesomeIcon icon={faEllipsisV}/>
+        <FontAwesomeIcon style={{marginLeft:'2em'}} icon={faEllipsisV}/>
             </td>
 
          </tr>
@@ -62,7 +84,7 @@ function Mechanical() {
         <td>30 Jun 2023</td>
         <td>In progress</td>
         <td >
-        <FontAwesomeIcon icon={faEllipsisV}/>
+        <FontAwesomeIcon style={{marginLeft:'2em'}} icon={faEllipsisV}/>
             </td>
 
         </tr>
@@ -74,7 +96,7 @@ function Mechanical() {
         <td>30 Jun 2023</td>
         <td>In progress</td>
         <td >
-        <FontAwesomeIcon icon={faEllipsisV}/>
+        <FontAwesomeIcon style={{marginLeft:'2em'}} icon={faEllipsisV}/>
             </td>
            </tr>
   
@@ -85,7 +107,7 @@ function Mechanical() {
         <td>30 Jun 2023</td>
         <td>In progress</td>
         <td >
-        <FontAwesomeIcon icon={faEllipsisV}/>
+        <FontAwesomeIcon style={{marginLeft:'2em'}} icon={faEllipsisV}/>
             </td>
         </tr>
   
@@ -96,7 +118,7 @@ function Mechanical() {
         <td>30 Jun 2023</td>
         <td>In progress</td>
         <td >
-        <FontAwesomeIcon icon={faEllipsisV}/>
+        <FontAwesomeIcon style={{marginLeft:'2em'}} icon={faEllipsisV}/>
             </td>
 
         </tr>

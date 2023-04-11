@@ -1,9 +1,25 @@
+
+.projectz{
+    margin-left:-1.5em !important ;
+    margin-top: -5.2em;
+    }
+    
 .teamzz{
     display: flex;
 flex-direction: column;
     gap: 0.5em;
     margin-left: 60em !important;
     margin-top: 3em !important;
+}
+.hall{
+    margin-left: 23em !important;
+    font-size: 1.1em;
+    margin-top: -0.7em !important;
+}
+.hall-image{
+    margin-left: 0.2em !important;
+    margin-top: -0.3em !important;
+
 }
 .n{
     display: grid;
@@ -21,4 +37,12 @@ font-size: 1.1em !important;
 .propro{
     font-size: 1.3em !important;
     font-weight: none !important;
+}
+.lantic{
+    font-size: 0.7em !important;
+}
+    
+.blacklink{
+    color: #091E42;
+    text-decoration: none;
 }

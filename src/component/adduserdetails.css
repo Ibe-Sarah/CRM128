@@ -1,0 +1,37 @@
+.userdetails{
+    margin-left: 15em !important;
+    
+}
+.Headdd{
+    background-color: white;
+    font-size: 1em !important;
+    margin-left: -27em !important;
+    border-bottom: 1px solid #B0B0B0;
+   
+}
+#staff{
+    width: 9em !important;
+}
+#close{
+    background-color: white !important ;
+    border-radius:  8px;
+    color: red;
+    border-color: red;
+    width:5em;
+    height: 2.5em;
+    padding: 8px, 24px, 8px, 24px;
+    margin-left: 12em;
+    margin-top: 3em;
+}
+.add{
+    background-color:#0047B3;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    width:5em;
+    height: 2.5em;
+    padding: 8px, 24px, 8px, 24px;
+    margin-left: -1em;
+    margin-top: 3em;
+
+}

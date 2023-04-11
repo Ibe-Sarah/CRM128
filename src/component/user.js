@@ -9,8 +9,8 @@ function UserInfo(props) {
   return (
     <div className="user-info ml-auto">
       <div className="initials">{initials}</div>
-      <div className="name">{name}</div>
-      <div className="position">{position}</div>
+      <div style={{fontWeight:'bolder'}} className="name">{name}</div>
+      <div style={{fontWeight:'lighter'}} className="position">{position}</div>
     </div>
   );
 }

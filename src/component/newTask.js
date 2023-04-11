@@ -1,5 +1,6 @@
 import { useState } from "react";
 import './newTask.css'
+import { HiX } from "react-icons/hi";
 
 const Form = () => {
   const [showMoreDetails, setShowMoreDetails] = useState(false);
@@ -11,7 +12,7 @@ const Form = () => {
   return (
     <form>
       
-        <h4 className="Head">Create New Task </h4>
+        <h4 className="Head"> <br className="smallbreak"/>Create New Task   <HiX style={{marginLeft:'9em', marginTop:'-0.2em'}}/> </h4>
       <label htmlFor="title">Title:</label>
       <input type="text" id="title" name="title" placeholder="Enter title" />
 
@@ -80,7 +81,7 @@ const Form = () => {
             
           </select>
           </label>
-
+          <button style={{height:'2em'}} id="save" type="submit">Save</button>
         </div>
       )}
 
