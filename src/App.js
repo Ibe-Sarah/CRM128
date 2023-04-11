@@ -104,8 +104,8 @@ const handleRangeChange = (event) => {
        {displayDetails && <Project />}  */}
 
        <Routes>
-       <Route path="/" element={<Navigate to="/CRM" />} />
-        <Route path="/CRM" element={<Grid />} />
+       <Route path="/" element={<Navigate to="/CRM128" />} />
+        <Route path="/CRM128" element={<Grid />} />
         <Route path="/atlantic" element={<Project />} />
         <Route path="/mechanical" element={<Mechanical />} />
         <Route path="/list" element={<ListComponent />} />

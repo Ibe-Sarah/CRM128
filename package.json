@@ -2,7 +2,7 @@
   "name": "dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Ibe-Sarah.github.io/CRM128.git",
+  "homepage": "https://Ibe-Sarah.github.io/CRM128",
   "dependencies": {
     "@fluentui/react-icons": "^2.0.199",
     "@fortawesome/fontawesome-free": "^6.3.0",
