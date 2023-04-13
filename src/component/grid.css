@@ -168,7 +168,7 @@ input[type="range"] [value]{
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 1fr);
     gap: 2em;
-    margin-left: 3em !important;
+    margin-left: 5em !important;
     margin-top: 5em !important;
 
     }
