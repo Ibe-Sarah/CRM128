@@ -20,3 +20,17 @@ font-family: 'Archivo', sans-serif;
     font-size: 1em;
     margin-top: -1.3em !important;
    }
+
+   
+   @media only screen and (max-width: 960px) {
+    table {
+      margin-top: 4.8em !important;
+      width: 74vw;
+      border-collapse: collapse;
+  margin-left: 1em;   
+  font-family: 'Archivo', sans-serif;
+  
+  
+    }
+  
+  }
