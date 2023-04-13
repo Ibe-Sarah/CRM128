@@ -29,8 +29,8 @@
   
     .sidebar__toggle {
       position: absolute;
-      top: 20px;
-      right: 300px;
+      top: 25px;
+      right: 350px !important;
       font-size: 1.5rem;
       cursor: pointer;
       z-index: 1;
