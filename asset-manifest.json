@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/CRM128/static/css/main.49015d64.css",
-    "main.js": "/CRM128/static/js/main.31b360b2.js",
+    "main.css": "/CRM128/static/css/main.8a69635b.css",
+    "main.js": "/CRM128/static/js/main.eceb1bab.js",
     "static/js/787.545aecf5.chunk.js": "/CRM128/static/js/787.545aecf5.chunk.js",
     "static/media/logo.svg": "/CRM128/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/CRM128/index.html",
-    "main.49015d64.css.map": "/CRM128/static/css/main.49015d64.css.map",
-    "main.31b360b2.js.map": "/CRM128/static/js/main.31b360b2.js.map",
+    "main.8a69635b.css.map": "/CRM128/static/css/main.8a69635b.css.map",
+    "main.eceb1bab.js.map": "/CRM128/static/js/main.eceb1bab.js.map",
     "787.545aecf5.chunk.js.map": "/CRM128/static/js/787.545aecf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.49015d64.css",
-    "static/js/main.31b360b2.js"
+    "static/css/main.8a69635b.css",
+    "static/js/main.eceb1bab.js"
   ]
 }
