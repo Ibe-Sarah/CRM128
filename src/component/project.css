@@ -46,3 +46,9 @@ font-size: 1.1em !important;
     color: #091E42;
     text-decoration: none;
 }
+@media only screen and (max-width: 960px) {
+    .projectz{
+        margin-left:0.3em !important ;
+        margin-top: -5.2em;
+        }
+}

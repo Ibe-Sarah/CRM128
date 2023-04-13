@@ -20,50 +20,61 @@
     margin-left: -3em;
     margin-top: -4.5em
     }
-    .bread { 
-        margin-left: 21.8em !important;
+    .bread {
         display: flex;
-        flex-direction: row;
-        text-decoration: none !important;
-        justify-content: stretch     !important;
-        justify-items: center !important;
-    }
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 100%;
+        /* margin-bottom: 25px; */
+        margin-left: -8.6em;
+      }
+      
+      /* .breadcrumb-arrow {
+        margin: 0 10px;
+      } */
     Link{
         text-decoration: none !important;
         margin-left: 2em !important;
     }
-    @media only screen and (max-width: 360px) {
+   @media only screen and (max-width: 960px) {
+        .bread { 
+            margin-left: 2em !important;
+            display: flex;
+            gap: 0.2em;
+            flex-direction: row !important;
+            text-decoration: none !important;
+            /* justify-content: stretch     !important; */
+            justify-items: center !important;
+            margin-top: -0.5em;
+        }
+
         .breadcrumb-not-active {
             color: black;
-            margin-left: -7em;
-            margin-top: -5.5em;
+            margin-left: -8em;
+            margin-top: -4.5em;
             list-style-type: none !important;
             text-decoration: none !important;
-            }
+            font-family: 'Archivo', sans-serif;
+            font-size: 0.8em !important;
         
-        .breadcrumb-active {
+        }
+            
+            .breadcrumb-active {
             color:blue ;
-            margin-left: -7em;
-            margin-top: -4em;
+            margin-left: -8.5em !important;
+            margin-top: -4.5em;
             text-decoration: none !important;
+            font-size: 0.8em !important;
+
+            
             }
             
             .breadcrumb-arrow {
-            margin-left: -3em;
-            margin-top: -2.5em
-            }
-            .bread { 
-                margin-left: 25em !important;
-                display: flex;
-                flex-direction: row;
-                gap: 2.3em;
-                
-                text-decoration: none !important;
-                justify-content: stretch     !important;
-                justify-items: center !important;
-            }
-           
+            margin-left: -3.5em;
+            margin-top: -4em;
+           /* display: none */
+        }
 
-
-    }
-      
+         
+    }     

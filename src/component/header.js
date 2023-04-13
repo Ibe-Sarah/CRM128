@@ -19,7 +19,7 @@ function Header() {
     setShowNotification(false);
   };
   return (
-    <Navbar bg="#F6f6F6" expand="lg" style={{borderBottom:'1px solid #B0B0B0', marginTop:'0.5em'}}>
+    <Navbar bg="#F6f6F6" className='header' expand="lg" style={{borderBottom:'1px solid #B0B0B0', marginTop:'0.5em'}}>
       <Container >
         <h1 className='home'><img src= {process.env.PUBLIC_URL + "/CRM128.png"} style={{width:'5em', marginBottom:'0.5em'}}></img></h1>
         {/* <Navbar.Toggle aria-controls="basic-navbar-nav"  /> */}

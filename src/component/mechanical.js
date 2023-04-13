@@ -20,7 +20,7 @@ function Mechanical() {
     return (
   
   
-      <div className="Mech">
+      <div  style={{ overflowX: 'auto' }}className="Mech">
        
             <CreateTask/>
             

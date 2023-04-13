@@ -340,3 +340,87 @@ select{
     margin-left: -0.1em;
   }
 }
+
+@media screen and (max-width: 960px) {
+  .fa-bell {
+  margin-left: 1em;
+  }
+  
+  .search-input {
+  margin-right: 1em;
+  margin-top: 0;
+  }
+  
+  .home {
+  margin-left: 3.5em !important;
+  }
+  .frame{
+    margin-top: 2em !important;
+    margin-left: 15em !important;
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+    position: top !important;
+  }
+  .user-info {
+  margin-left: 1rem;
+  margin-top: 0;
+  }
+  
+  .name {
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  }
+  .header{
+    /* margin-left: 1em !important; */
+
+  }
+  .position {
+  font-size: 0.7em;
+  margin-top: 1em;
+  margin-left: -5em;
+  }
+  
+  .togg {
+  margin-top: 2em;
+  }
+  
+  .main {
+  margin: 2em;
+  width: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1em;
+  }
+  
+  .Headz {
+  margin-left: -1em;
+  margin-top: 1em;
+  font-size: 0.9em;
+  }
+  
+  .install {
+  margin-left: -12em;
+  margin-top: 0.5em;
+  font-size: 0.8em;
+  }
+  
+  .notification-item {
+  height: auto;
+  margin-bottom: 1em;
+  }
+  
+  .notification__image-container {
+  width: 40px;
+  height: 40px;
+  }
+  
+  .notification__image {
+  width: 100%;
+  height: 100%;
+  }
+  
+  .notification-item p {
+  margin-top: 1em;
+  }
+  }

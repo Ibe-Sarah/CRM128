@@ -27,4 +27,16 @@
     /* background-color:rgba(0, 0, 0, 0.5); */
     /* width: 50em; */
   }
-  
+  @media only screen and (max-width: 960px) {
+    body{
+    background-color: #F6F6F6 !important;
+    }
+  }
+  .circle-dots {
+    position: absolute;
+    top: 2;
+    right: 3;
+    margin-left: 23em !important;
+    margin-top: -1.3em;
+    cursor: pointer;
+  }

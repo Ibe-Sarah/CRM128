@@ -6,7 +6,6 @@ import { faTachometerAlt, faUsers, faCalculator, faUserFriends, faCog, faSignOut
 import './sidebar.css';
 import { Navigation } from "baseui/side-navigation";
 import { Select } from "baseui/select";
-import { useStyletron} from 'baseui';
 import SideNavListItem from './SideNavListItem.js';
 import { menuData } from './constant';
 import styled from 'styled-components';
@@ -14,6 +13,8 @@ import { Link } from 'react-router-dom';
 import * as RiIcons from 'react-icons/ri'
 import * as FaIcons from 'react-icons/fa'
 import * as AiIcons from 'react-icons/ai'
+import { FaBars, FaTimes } from 'react-icons/fa';
+
 
 
 const Nav = styled.div`
@@ -22,9 +23,11 @@ display: flex;
 justify-content: flex-start;
 align-Items: center;
 overflowY: auto;
+
+
 `;
 // const NavIcon = styled(Link)`
-// margin-left: 2rem;
+// margin-left: 3rem;
 // font-size: 2rem;
 // // height: 80px;
 // display:flex;
@@ -35,7 +38,7 @@ overflowY: auto;
 const SidebarNav=styled.nav`
 background: #FFFFFF;
 width:250px;
- height: 200%;
+ height: 100vh;
 display: flex;
 justify-content: center;
 position:fixed;
@@ -44,16 +47,17 @@ top: 0;
 
 left: ${({sidebar})=> (sidebar ? '0' : '-100%')}
 transition: 350ms;
+
 border-right: 1px solid #B0B0B0;
 border-bottom: 2px solid #B0B0B0;
 box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2) ;
 
- `;
+//  `;
  const SidebarWrap= styled.nav`
  width: 70vh;
  margin-top: 5.4em;
  height: 200%;
- padding-left: 2em;
+ padding-left: 2em; 
  overflow-y:auto;
  background-color: #FFFFFF !important;
 //  border-right: 0.5px solid #B0B0B0;
@@ -61,25 +65,38 @@ box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2) ;
  box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2) ;
 
  `
+ 
 
-const Sidebar = ({open, setOpen}) => {
-    const [sidebar, setSidebar] = useState(false)
-    const showSidebar = ()=> setSidebar(!sidebar)
-    const [css] = useStyletron();
+const Sidebar = () => {
+    const [sidebarOpen, setSidebarOpen] = useState(true);
+
+    const toggleSidebar = () => {
+      setSidebarOpen(!sidebarOpen);
+    };
+
     return (
         <>
-        <Nav>
-          
+        
+        <Nav >
+          {/* <NavIcon to='#'>
+            <FaIcons.FaBars onClick={showSidebar}/>
+              </NavIcon> */}
         </Nav>
-        <SidebarNav sidebar={sidebar}>
-            <SidebarWrap>
-              
+        <div className="sidebar__toggle" onClick={toggleSidebar}>
+        {sidebarOpen ? <FaTimes /> : <FaBars />}
+      </div>
+      
+      {sidebarOpen && ( <SidebarNav   >
+          <SidebarWrap>
+            {/* <NavIcon to='#'><AiIcons.AiOutlineClose onClick={showSidebar}/></NavIcon> */}
+                
                 {menuData.map((item, index) =>
                 {
                     return <SideNavListItem item={item} key={index}/>
                                     })}
             </SidebarWrap>
-        </SidebarNav>
+        </SidebarNav>)}
+        
         </>
     );
 };

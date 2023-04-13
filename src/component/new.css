@@ -1,5 +1,5 @@
 .sort{
-    margin-top: -6em !important;
+    margin-top: -4em !important;
     margin-left: 1em;
     width: 1em;
     height: 1em;
@@ -11,7 +11,7 @@
     /* border: #0047B3 2px solid; */
 }
 .frame{
-    margin-top: -6em !important;
+    margin-top: -4em !important;
     margin-left: 6em;
     width: 1em;
     height: 1em;
@@ -156,9 +156,9 @@ font-family: 'Archivo', sans-serif;
     
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 960px) {
    .first-btn{ 
-    width:13em !important;
+    width:10em !important;
     height:3em !important;
     margin-bottom: -3.4em !important;
     color: #E6F0FF !important;
@@ -167,18 +167,39 @@ font-family: 'Archivo', sans-serif;
     border-radius: 5px !important;
    padding: 8px, 24px, 8px, 24px !important;
    /* position: absolute; */
-   margin-left: 20em !important;
+   margin-left: -46em !important;
    font-weight: bold ;
 
     
 }
+
+.bttnn{
+    margin-top: -3.7em !important;
+    margin-left: -32.3em !important;
+    width: 10em !important;
+    background-color: #0047B3 !important;
+    border: #0047B3 1px solid !important;
+    border-radius: 5px !important;
+    height:3em !important;
+    color: #E6F0FF !important;
+    font-weight: bold ;
+    font-family: 'Archivo', sans-serif;
+    
+    }
 .sort{
-    margin-top: -10em !important;
-    margin-left: 77em;
+    margin-top: -3.7em !important;
+    margin-left: 18em;
     width: 1em;
     height: 1em;
     cursor: pointer;
     /* border: #0047B3 2px solid; */
 }
-
+.frame{
+    margin-top: -0.7em !important;
+    margin-left: 6em;
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+    /* border: #0047B3 2px solid; */
+}
   }

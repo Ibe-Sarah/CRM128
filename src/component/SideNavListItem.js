@@ -61,7 +61,7 @@ const SideNavListItem= ({item})=> {
             {item.icon}
             <SidebarLabel >{item.title}</SidebarLabel>
         </div>
-        <div >
+        <div  >
             {item.subNav && subnav
              ? item.iconOpened
              : item.subNav
@@ -73,7 +73,7 @@ const SideNavListItem= ({item})=> {
         {subnav  && item.subNav.map((item, index)=>{
             
             return(
-                <DropdownLink  to ={item.path} key={index}>
+                <DropdownLink   to ={item.path} key={index}>
                     {item.icon}
                     <SidebarLabel>{item.title}</SidebarLabel>
                   </DropdownLink>

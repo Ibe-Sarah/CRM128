@@ -1,75 +1,86 @@
-.sidebar{
-    gap: 1em;
-    margin-left: 2em;
-    margin-top: -2.5em;
-    
-    position: absolute;
-}
-.img, svg{
-    margin-left: -2.5em;
-}
-.side{
-    color:  blue;
-    margin-left: -0.3em;
-    margin-top: -1em;
-     position: sticky;
-    z-index: 1;
-}
-h5 {
-    margin-left: -7em !important;
-    margin-top: -1.8em !important;
-    font-size: 10px;
-    color:  rgb(1, 1, 56);
-    height: 2em;
-
-}
-#project-dropdown{
-    color: rgb(1, 1, 56);
-    background-color: white !important;
-    border: none !important;
-    margin-left: 0em;
-    margin-top: -3.5em;
-    font-size: 15px;
-    color:  rgb(1, 1, 56) !important;
-    font-weight: bolder;
-    /* max-height: 200px !important; */
-    /* overflow-y: auto !important; */
-    
-}
-h6{
-    color:  rgb(1, 1, 56);
-    font-weight: bolder !important;
-    margin-left: 2.3em !important;
-    margin-top: -1em !important;
-    height: 2em;
-    
-
-}
-.team h6{
-    border-top: 1px solid !important;
-    /* background-color: brown !important; */
-    border-bottom: 1px solid !important;
-    height: 3em;
-    width: 10em;
-}
-.ditem{
-    max-height: 200px; /* adjust the height to your needs */
-  /* overflow-y: scroll !important; */
-  overflow-wrap: normal;
-  color:black !important;
-  height: 130px !important;
-  /* resize: vertical; */
-  overflow-y: auto !important;
-
+.sidebar__toggle {
+    display: none;
   }
-  ::-webkit-scrollbar-track:hover,
-::-webkit-scrollbar-track:active {
-  background-color: #f5f5f5;
+  img, svg {
+    vertical-align: middle;
+    margin-left: -2em;
 }
-.selected {
-    width: 3em !important;
-}
-    .side-nav{
-        width: 7em !important;
-    background-color: green !important;
+  
+  @media only screen and (max-width: 768px)  {
+    .sidebar__toggle {
+      display: block;
     }
+  
+    nav.Sidebarnav {
+      /* position: fixed;
+      top: 0;
+      left: -250px; */
+      width: 250px;
+      height: 100%;
+      background: #fff;
+      transition: 0.3s;
+      display:  none !important;
+    }
+  
+    .sidebar__list {
+      padding: 0;
+      margin: 0;
+    }
+  
+    .sidebar__toggle {
+      position: absolute;
+      top: 20px;
+      right: 300px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      z-index: 1;
+    }
+  
+    .sidebar__toggle:hover {
+      color: #333;
+    }
+  
+    .sidebar.open {
+      left: 0;
+    }
+  }
+  /* @media (min-width: 768px)  {
+    .sidebar__toggle {
+      display: block;
+    }
+  
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100%;
+      background: #fff;
+      transition: 0.3s;
+    }
+  
+    .sidebar__list {
+      padding: 0;
+      margin: 0;
+    }
+  
+    .sidebar__toggle {
+      position: absolute;
+      top: 20px;
+      right: 1240px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      z-index: 1;
+      border: none;
+      background-color: #FFFFFF;
+    }
+  
+    .sidebar__toggle:hover {
+      color: #333;
+    }
+  
+    .sidebar.open {
+      left: 0;
+    }
+  }
+   */
